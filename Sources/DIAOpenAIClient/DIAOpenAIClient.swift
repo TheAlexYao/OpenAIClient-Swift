@@ -83,7 +83,7 @@ public struct OpenAIClient {
             .file(paramName: "file", fileName: fileName, fileData: audioData, contentType: "audio/mpeg"),
             .string(paramName: "model", value: "whisper-1"),
             .string(paramName: "language", value: "es"),
-            .string(paramName: "prompt", value: "Me llamo Alex. My name is Alex."),
+            .string(paramName: "prompt", value: "Me llamo Alex, es un placer conocerte. My name is Alex, it is a pleasure to meet you."),
             .string(paramName: "response_format", value: "text")
         ])
         request.httpBody = bodyBuilder.build()
