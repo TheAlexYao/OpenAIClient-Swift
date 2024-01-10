@@ -82,6 +82,8 @@ public struct OpenAIClient {
         let bodyBuilder = MultipartFormDataBodyBuilder(boundary: boundary, entries: [
             .file(paramName: "file", fileName: fileName, fileData: audioData, contentType: "audio/mpeg"),
             .string(paramName: "model", value: "whisper-1"),
+            .string(paramName: "language", value: "es"),
+            .string(paramName: "prompt", value: "Me llamo Alex. My name is Alex."),
             .string(paramName: "response_format", value: "text")
         ])
         request.httpBody = bodyBuilder.build()
