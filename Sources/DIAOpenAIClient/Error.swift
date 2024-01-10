@@ -2,7 +2,7 @@
 //  Error.swift
 //
 //
-//  Created by Alfian Losari on 08/11/23.
+//  Created by Alex Yao.
 //
 
 import Foundation
